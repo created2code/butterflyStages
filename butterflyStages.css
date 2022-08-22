@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #e2eff9 !important
+    
+}
+
+
+.container{
+    position: relative;
+}
+
+.container .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+    position: absolute;
+
+}
+
+.container .slide-container .slide .content{
+    flex: 1 1 350px;
+}
+
+.container .slide-container .slide .icon{
+    flex: 1 1 350px;
+    padding: 15px 19%;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.container .slide-container .slide .image img {
+    width: 100%;
+}
+
+.container .slide-container .slide .content p{
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.container .slide-container .slide .content h1{
+    font-size: 40px;
+    color: #1e73be;
+    font-weight: 700;
+}
+
+.container .slide-container{
+    visibility: hidden;
+
+}
+
+.container .slide-container .activo{
+    visibility: visible;
+}
+
+
+#prev, 
+#next{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+color: white;
+background:#1e73be;
+height: 50px;
+width: 60px;
+line-height: 50px;
+font-size: 25px;
+text-align: center;
+cursor: pointer;
+font-weight: bolder;    
+}
+
+#prev:hover,
+#next:hover{
+    background:#5da6db;
+}
+#prev{
+    left: 20px;
+}
+
+#next{
+    right: 20px;
+}
